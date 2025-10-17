@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Nan Hsu Thet Paing — Portfolio</title>
   <meta name="description" content="Nan Hsu Thet Paing — Frontend developer (aspiring full-stack). BSc ICT at Rangsit University." />
-
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link rel="stylesheet" href="style.css">
@@ -17,7 +14,6 @@
   <header class="nav" id="nav">
     <div class="nav-inner container">
       <a class="logo" href="#home">
-        <!-- <img src="assets/nan.jpg" alt="NS" class="logo-img"> -->
         <span class="logo-text">Nan Hsu Thet Paing</span>
       </a>
 
@@ -30,7 +26,9 @@
       </nav>
 
       <div class="nav-actions">
-        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌗</button>
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">
+          <i id="themeIcon" class="fas fa-moon"></i>
+        </button>
         <a class="cta" href="assets/Nan Hsu Thet Paing.pdf" target="_blank" rel="noopener">Resume</a>
         <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
@@ -38,7 +36,6 @@
   </header>
 
   <main>
-    <!-- HERO -->
     <section id="home" class="hero">
       <div class="hero-inner container">
         <div class="hero-left">
@@ -81,7 +78,6 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section id="about" class="section about container">
       <div class="reveal-card">
         <h2>About Me</h2>
@@ -99,25 +95,23 @@
       </div>
     </section>
 
-    <!-- SKILLS -->
+
     <section id="skills" class="section skills container">
       <h2>Technical Skills</h2>
       <div class="skills-grid">
-  <div class="skill-card reveal"><div class="skill-icon"><i class="fab fa-html5"></i></div><h4>HTML</h4><p>Semantic markup, accessible structure.</p></div>
-  <div class="skill-card reveal"><div class="skill-icon"><i class="fab fa-css3-alt"></i></div><h4>CSS</h4><p>Grid, Flexbox, animations, responsive layout.</p></div>
-  <div class="skill-card reveal"><div class="skill-icon"><i class="fab fa-js"></i></div><h4>JavaScript</h4><p>ES6+, DOM, fetch API, UI logic.</p></div>
-  <div class="skill-card reveal"><div class="skill-icon"><i class="fab fa-java"></i></div><h4>Java</h4><p>Object-oriented programming, backend logic.</p></div>
-  <div class="skill-card reveal"><div class="skill-icon"><i class="fab fa-python"></i></div><h4>Python</h4><p>Data analysis, automation scripts, AI prototypes.</p></div>
-  <div class="skill-card reveal"><div class="skill-icon"><i class="fas fa-code"></i></div><h4>Dart</h4><p>Backend logic & Flutter app development.</p></div>
-  <div class="skill-card reveal"><div class="skill-icon"><i class="fas fa-mobile-alt"></i></div><h4>Flutter</h4><p>Mobile-first UI & cross-platform prototypes.</p></div>
-  <div class="skill-card reveal"><div class="skill-icon"><i class="fas fa-cube"></i></div><h4>Unity</h4><p>2D/3D game development & interactive simulations.</p></div>
-  <div class="skill-card reveal"><div class="skill-icon"><i class="fas fa-database"></i></div><h4>SQL</h4><p>Database queries, schema design, CRUD operations.</p></div>
-  <div class="skill-card reveal"><div class="skill-icon"><i class="fab fa-github"></i></div><h4>Git</h4><p>Version control, GitHub projects & collaboration.</p></div>
-</div>
+      <div class="skill-card reveal"><div class="skill-icon"><i class="fab fa-html5"></i></div><h4>HTML</h4><p>Semantic markup, accessible structure.</p></div>
+      <div class="skill-card reveal"><div class="skill-icon"><i class="fab fa-css3-alt"></i></div><h4>CSS</h4><p>Grid, Flexbox, animations, responsive layout.</p></div>
+      <div class="skill-card reveal"><div class="skill-icon"><i class="fab fa-js"></i></div><h4>JavaScript</h4><p>ES6+, DOM, fetch API, UI logic.</p></div>
+      <div class="skill-card reveal"><div class="skill-icon"><i class="fab fa-java"></i></div><h4>Java</h4><p>Object-oriented programming, backend logic.</p></div>
+      <div class="skill-card reveal"><div class="skill-icon"><i class="fab fa-python"></i></div><h4>Python</h4><p>Data analysis, automation scripts, AI prototypes.</p></div>
+      <div class="skill-card reveal"><div class="skill-icon"><i class="fas fa-code"></i></div><h4>Dart</h4><p>Backend logic & Flutter app development.</p></div>
+      <div class="skill-card reveal"><div class="skill-icon"><i class="fas fa-mobile-alt"></i></div><h4>Flutter</h4><p>Mobile-first UI & cross-platform prototypes.</p></div>
+      <div class="skill-card reveal"><div class="skill-icon"><i class="fas fa-cube"></i></div><h4>Unity</h4><p>2D/3D game development & interactive simulations.</p></div>
+      <div class="skill-card reveal"><div class="skill-icon"><i class="fas fa-database"></i></div><h4>SQL</h4><p>Database queries, schema design, CRUD operations.</p></div>
+      <div class="skill-card reveal"><div class="skill-icon"><i class="fab fa-github"></i></div><h4>Git</h4><p>Version control, GitHub projects & collaboration.</p></div>
+    </div>
+</section>
 
-    </section>
-
-    <!-- PROJECTS -->
 <section id="projects" class="section projects container">
   <h2>Selected Projects</h2>
   <div class="project-grid">
@@ -161,12 +155,9 @@
         <a href="https://github.com/nanhsuthetpaing/FAQ_Chatbot" target="_blank" class="btn btn-sm btn-outline">View Project</a>
       </div>
     </article>
-
   </div>
 </section>
 
-
-    <!-- CONTACT -->
     <section id="contact" class="section contact container">
       <div class="contact-card reveal-card">
         <h2>Contact</h2>
@@ -185,11 +176,12 @@
             <input type="email" name="email" placeholder="Your email" required>
             <textarea name="message" rows="6" placeholder="Message" required></textarea>
             <button class="btn btn-primary" type="submit">Send Message</button>
+            <p id="formStatus" style="margin-top:10px; font-weight:500;"></p>
           </form>
         </div>
       </div>
     </section>
-    <!-- SOCIAL LINKS AFTER CONTACT -->
+
     <div class="social-row container reveal">
       <h4>Find Me</h4>
       <div class="social">
@@ -208,5 +200,12 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("zosB23hFxhEFy9kZw");
+  })();
+</script>
+</script>
 </body>
 </html>
